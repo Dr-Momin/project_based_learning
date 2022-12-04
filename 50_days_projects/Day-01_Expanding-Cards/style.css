@@ -38,10 +38,9 @@ body {
   background: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
-
 .container{
-  display: flex;
   width: 90vw;
+  display: flex;
 }
 
 .panel{
@@ -52,22 +51,24 @@ body {
 
   height: 80vh;
   border-radius: 50px;
+  flex: 0.7;
   margin: 10px;
-  flex: 0.5;
 
   position: relative;
   cursor: pointer;
   transition: all 0.7s ease-in;
 }
 
-h3{
+.panel h3{
   position: absolute;
   bottom: 20px;
   left: 20px;
   color: #fff;
   font-size: 24px;
   opacity: 0;
+
 }
+
 
 .panel.active{
   flex: 5;
@@ -75,19 +76,23 @@ h3{
 
 .panel.active h3{
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+  transition: opacity 0.3s ease;
 }
 
 
 
 
-@media(max-width: 480px){
+
+@media (max-width: 480px){
   .container{
     width: 100vw;
   }
 
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5){
+  .panel:nth-child(4),
+  .panel:nth-child(5){
     display: none;
   }
 }
+
+
+
