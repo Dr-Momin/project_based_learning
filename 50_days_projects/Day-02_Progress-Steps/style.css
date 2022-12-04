@@ -11,107 +11,107 @@
   --line-border-empty: #e0e0e0;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+
   overflow: hidden;
-  margin: 0;
+
 }
 
 
 .container{
   text-align: center;
-}
-
-
-.container .progress-container{
-
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  max-width: 100%;
-  width: 350px;
-
   
-  position: relative;
 }
 
 .progress-container::before{
   content: '';
   background-color: var(--line-border-empty);
-  width: 100%;
   position: absolute;
-  left: 0;
   top: 50%;
-  height: 4px;
+  width: 100%;
+  height: 3px;
 
   transform: translateY(-50%);
   z-index: -1;
-  transition: 0.4s ease;
+
+
 }
 
 
+.progress-container{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  max-width: 100%;
+  margin-bottom: 30px;
+
+  position: relative;
+}
+
 .progress{
   background-color: var(--line-border-fill);
-  width: 0%;
   position: absolute;
-  left: 0;
   top: 50%;
-  height: 4px;
+  width: 0%;
+  height: 3px;
 
   transform: translateY(-50%);
   z-index: -1;
-  transition: 0.4s ease;
+  transition: all 0.5s ease;
+
 }
 
 
 .circle{
-  background-color: white;
-  color: #999;
-  border-radius: 50%;
-  height: 30px;
+  
   width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--line-border-empty);
+  background: white;
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: 3px solid var(--line-border-empty);
+  align-items: center;
 
-  transition: 0.4s ease;
 }
-
 
 .circle.active{
-  border-color: var(--line-border-fill);
+  background: var(--line-border-fill);
+  border: 2px solid var(--line-border-fill);
+  color: white;
+
 }
+
 
 
 .btn{
-  background-color: var(--line-border-fill);
-  color: #fff;
-  border: 0;
-  border-radius: 6px;
+  background: var(--line-border-fill);
+  border: none;
+  outline: none;
   padding: 10px 30px;
-  margin: 10px;
-  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+
   cursor: pointer;
-
-
 }
+
+
+
+.btn:disabled{
+  background: var(--line-border-empty);
+  cursor: not-allowed;
+}
+
 
 
 .btn:active{
   transform: scale(0.95);
 }
 
-.btn:focus{
-  outline: 0;
-}
-
-.btn:disabled{
-  background-color: var(--line-border-empty);
-  cursor: not-allowed;
-}
