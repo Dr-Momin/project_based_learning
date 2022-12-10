@@ -26,6 +26,80 @@ body{
 
 .container{
   text-align: center;
+}
+
+.progress-container::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 100%;
+  height: 3px;
+  background: var(--line-border-empty);
+  z-index: -1;
+
+}
+
+.progress-container{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+
+
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.progress{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 0%;
+  height: 3px;
+  background: var(--line-border-fill);
+  
+  z-index: -1;
+}
+
+.circle{
+  height: 30px;
+  width: 30px;
+  background: var(--line-border-empty);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.circle.active{
+  background: var(--line-border-fill);
+}
+
+
+.btn{
+  background: var(--line-border-fill);
+  padding: 15px 40px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+.btn:disabled{
+  background: var(--line-border-empty);
+  cursor: not-allowed;
+}
+
+
+/* .container{
+  text-align: center;
   
 }
 
@@ -52,6 +126,7 @@ body{
   margin-bottom: 30px;
 
   position: relative;
+  border: 2px solid red;
 }
 
 .progress{
@@ -114,4 +189,4 @@ body{
 .btn:active{
   transform: scale(0.95);
 }
-
+ */
