@@ -44,6 +44,52 @@ body {
 }
 
 .panel{
+  height: 90vh;
+  border-radius: 50px;
+  flex: 0.5;
+
+  position: relative;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+.panel.active{
+  flex: 5;
+}
+
+.panel h3{
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+  transition-delay: 0.25s;
+}
+
+.panel.active h3{
+  opacity: 1;
+}
+
+@media (max-width: 480px){
+  .container{
+    width: 95vw;
+  }
+
+  .panel:nth-child(4),
+  .panel:nth-child(5){
+    display: none;
+  }
+}
+
+/* .container{
+  width: 90vw;
+  display: flex;
+}
+
+.panel{
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,4 +141,4 @@ body {
 }
 
 
-
+ */
