@@ -1,10 +1,13 @@
+
+
 const panels = document.querySelectorAll(".panel");
 
 panels.forEach(panel => {
    panel.addEventListener("click", () => {
-      removeActivePanel()
+      removeActivePanel();
       panel.classList.add("active");
-   })
+
+   });
 });
 
 
@@ -13,6 +16,31 @@ const removeActivePanel = () => {
       panel.classList.remove("active");
    })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
