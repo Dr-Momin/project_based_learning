@@ -1,36 +1,43 @@
 
-
-const btnNext = document.getElementById('next');
-const btnPrev = document.getElementById('prev');
-const progress = document.getElementById('progress');
 const circles = document.querySelectorAll(".circle");
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+const progress = document.getElementById("progress");
+
 
 let countUpdate = 1;
 
 
-btnNext.addEventListener("click", () =>{
-  
-   countUpdate ++;
-   if(countUpdate > circles.length){
+next.addEventListener("click", () => {
+
+   countUpdate++;
+   if(countUpdate > circles.length) {
       countUpdate = circles.length;
    }
 
    update();
+
 });
 
-btnPrev.addEventListener("click", () =>{
 
+prev.addEventListener("click", () => {
    countUpdate--;
-   if (countUpdate < 1){
+
+   if(countUpdate < 1)
       countUpdate = 1;
-   }
 
    update();
-})
+});
 
-const update = () =>{
-   console.log("In update function......")
-   circles.forEach((circle, index) =>{
+
+
+// Function for updating the content
+const update = () => {
+   console.log("aalooo");
+   console.log(circles.length);
+   
+
+   circles.forEach((circle, index) => {
       if(index < countUpdate){
          circle.classList.add("active");
       }
@@ -39,22 +46,48 @@ const update = () =>{
       }
    });
 
-   const actives = document.querySelectorAll(".active");
+   
 
-   progress.style.width = (actives.length - 1 ) / (circles.length -1 ) * 100 + "%";
+   const actives = document.querySelectorAll(".active");
+   progress.style.width = (actives.length -1 ) / (circles.length -1 ) * 100 + "%";
+
 
    if(countUpdate === 1){
-      btnPrev.disabled = true;
+      prev.disabled = true;
    }
    else if(countUpdate === circles.length){
-      btnNext.disabled = true;
+      next.disabled = true;
    }
    else{
-      btnPrev.disabled = false;
-      btnNext.disabled = false;
+      next.disabled = false;
+      prev.disabled = false;
    }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const circles = document.querySelectorAll(".circle");
 
@@ -98,7 +131,7 @@ const update = () =>{
 
 //    circles.forEach((circle, index) => {
 
-//       if(index < currentActve){
+//       if(index < countUpdate){
 //          circle.classList.add("active");
 //       }
 //       else{
@@ -112,10 +145,10 @@ const update = () =>{
 
 //    progress.style.width = (actives.length - 1 ) / (circles.length -1 ) * 100 + "%";
 
-//    if(currentActve === 1){
+//    if(countUpdate === 1){
 //       prev.disabled = true;
 //    }
-//    else if(currentActve === circles.length){
+//    else if(countUpdate === circles.length){
 //       next.disabled = true;
 //    }else{
 //       next.disabled = false;
