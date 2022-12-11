@@ -23,8 +23,49 @@ body {
   margin: 0;
 }
 
+/* ============================================= */
+/* ============================================= */
+/* Your Code Starts Here */
 
 .bg{
+  width: 100vw;
+  height: 100vh;
+
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  position: relative;
+  filter: blur(0px);
+}
+
+.loading-text{
+
+  position: absolute;
+  font-size: 72px;
+  color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .bg{
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,4 +87,4 @@ body {
 
   position: absolute;
 
-}
+} */
