@@ -26,7 +26,38 @@ body {
 
 
 
-.btn {
+.btn{
+  background: rebeccapurple;
+  border: 0;
+  outline: 0;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .btn {
   background-color: rebeccapurple;
   border-radius: 5px;
   border: none;
@@ -44,4 +75,4 @@ body {
 
 .btn:focus {
   outline: none;
-}
+} */
