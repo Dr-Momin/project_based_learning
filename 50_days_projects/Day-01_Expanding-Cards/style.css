@@ -39,48 +39,50 @@ body {
 }
 
 
+/* ====================================== */
+/* ====================================== */
+/* Your code starts here */
+
+
 .container{
-  
   width: 90vw;
   display: flex;
+
 }
 
 .panel{
   height: 80vh;
   flex: 0.5;
-  margin: 10px;
   border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
 
   position: relative;
-  cursor: pointer;
-  transition: flex 0.3s ease-in-out;
+  transition: 0.3s ease;
+
 }
 
 .panel h3{
-  color: white;
   position: absolute;
   bottom: 20px;
   left: 20px;
+  
+  color: white;
   font-size: 24px;
-
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+
+  transition: 0.3s ease;
 }
+
 
 .panel.active{
   flex: 5;
+  transition: 0.3s ease;
 }
 
 .panel.active h3{
   opacity: 1;
 }
-
-
-
-
-
-
-
 
 
 
