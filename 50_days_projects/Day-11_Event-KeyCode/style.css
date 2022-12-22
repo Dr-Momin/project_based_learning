@@ -48,6 +48,7 @@ body {
    align-items: center;
 
    position: relative;
+   
 
 }
 
@@ -62,11 +63,6 @@ body {
    left: 0;
 
    text-align: center;
-   width: 100%;
-   color: var(--key-small);
-   font-size: 14px;
-
-
-
+   
 }
 
