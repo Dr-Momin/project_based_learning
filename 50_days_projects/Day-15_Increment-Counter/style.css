@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+  --bg-color: #8e44ad;
+}
+
+* {
+  box-sizing: border-box;
+  magin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+
+  background: var(--bg-color);
+}
+
+/* ====================================== */
+/* ====================================== */
+/* Your Code Starts Here */
+
+.counter-container{
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter{
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px){
+  body{
+    flex-direction: column;
+  }
+}
+
+
