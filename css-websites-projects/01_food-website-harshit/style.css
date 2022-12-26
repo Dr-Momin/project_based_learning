@@ -39,6 +39,8 @@ body{
    margin-top: 1rem;
    font-weight: 500;
    text-transform: uppercase;
+   text-decoration: none;
+   color: #fff;
 }
 
 .btn-primary{
@@ -145,6 +147,171 @@ body{
    text-decoration: none;
    color: white;
 }
+
+
+
+
+
+/* About Section Codes Here */
+#about{
+   padding: 50px 0;
+   background: rgba(0,0,0,0.05);
+}
+
+.about-wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   /* gap: 12rem; */
+}
+
+.about-text{
+   margin: auto;
+   flex: 1 1 400px;
+   /* border: 2px solid blue; */
+
+   transform: translateX(-150%);
+   animation: animate-about-text 1s ease-in-out forwards;
+}
+
+@keyframes animate-about-text{
+   100%{
+      transform: translateX(0);
+   }
+}
+
+.about-text h3{
+   font-size: 1.35rem;
+}
+
+.about-text h2{
+   font-size: 3rem;
+}
+.about-text p{
+   font-size: 1.5rem;
+}
+
+
+
+.about-img{
+   /* border: 2px solid red; */
+   flex: 1 1 400px;
+   
+   transform: translateX(150%);
+   animation: animate-about-img 1s ease-in-out forwards;
+
+}
+
+@keyframes animate-about-img{
+   100%{
+      transform: translateX(0);
+   }
+}
+
+
+
+.about-img img{
+   display: block;
+   width: 400px;
+   max-width: 100%;
+   margin: 0 auto;
+   object-fit: cover;
+   object
+   /* align-self: flex-end; */
+
+}
+
+
+
+/* Types of Food Code  */
+#food{
+   /* border: 2px solid red; */
+   margin: 0 auto;
+   text-align: center;
+   padding: 40px 0;
+}
+
+.food h2{
+   font-size: 3rem;
+   text-transform: uppercase;
+   font-weight: 500;
+   color: rgba(0,0,0,0.7);
+   padding: 30px 0;
+}
+
+.food-container{
+   /* border: 2px solid red; */
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+
+   transition: all 0.5s ease;
+}
+
+.food-type{
+   /* border: 2px solid blue; */
+   flex: 1 1 300px;
+   transition: all 0.5s ease;
+}
+.food-type .img-container img{
+   display: block;
+   width: 100%;
+}
+
+
+.img-container{
+   position: relative;
+
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+.img-container::after{
+   content: "";
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.6);
+   /* z-index: -10; */
+
+   transform: scaleY(0);
+   transition: all 0.4s ease;
+   transform-origin: bottom;
+}
+
+.img-container:hover::after{
+   transform: scaleY(1);
+}
+
+.img-container:hover .img-content{
+   opacity: 1;
+   z-index: 10;
+}
+
+
+.img-content{
+   position: absolute;
+   inset: 0;
+   color: white;
+
+   opacity: 0;
+   transition: opacity 0.4s ease;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.img-content h3{
+   font-size: 2.5rem;
+}
+
+.img-content a{
+   font-size: 1.5rem;
+}
+
+
 
 
 
