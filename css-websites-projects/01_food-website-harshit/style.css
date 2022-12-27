@@ -296,6 +296,7 @@ body{
 
    opacity: 0;
    transition: opacity 0.4s ease;
+   transition-delay: 0.2s;
 
    display: flex;
    flex-direction: column;
@@ -312,6 +313,68 @@ body{
 }
 
 
+/* ================================= */
+/* Food Menu Code here */
+/* ================================= */
+
+#food-menu{
+   /* text-align: center; */
+   padding: 40px 0;
+
+}
+
+.food-menu-heading{
+   text-align: center;
+   font-size: 3rem;
+   font-weight: 500;
+   color: rgba(0,0,0,0.5);
+}
+
+.food-menu-container{
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.food-menu-item{
+   display: flex;
+   flex: 1 1 450px;
+   gap: 1rem;
+   padding: 10px 0;
+   /* border: 2px solid red; */
+}
+
+.food-description .food-title{
+   font-size: 2.2rem;
+   font-weight: 500;
+   color: rgba(0,0,0,0.6);
+}
+
+.food-description p{
+   font-size: 1.25rem;
+}
+
+.food-description .food-price{
+   color: var(--primary-color);
+   font-weight: bold;
+}
+
+.food-menu-item {
+   /* font-size: 1.5rem; */
+}
 
 
 
+.food-img img{
+   display: block;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.food-description{
+   margin: auto 0;
+}
