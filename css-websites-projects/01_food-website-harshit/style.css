@@ -15,12 +15,16 @@
 
 html{
    font-size: 10px;
+   scroll-behavior: smooth;
 }
 
 body{
    font-family: "Poppins", sans-serif;
+}
 
-
+textarea{
+   resize: none;
+   font-family: "Poppins", sans-serif;
 }
 
 /* ================ Utility Classes ============= */
@@ -378,3 +382,231 @@ body{
 .food-description{
    margin: auto 0;
 }
+
+
+
+
+/* ================================= */
+/* Section: Testimonials */
+/* ================================= */
+#testimonials{
+   padding: 40px 0;
+}
+
+.testimonial-container{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.testimonial-title{
+   text-align: center;
+   font-size: 3rem;
+   font-weight: 500;
+   color: rgba(0,0,0,0.5);
+}
+
+.testimonial-box{
+   /* border: 2px solid red; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   padding: 20px 0;
+   flex: 1 1 250px;
+}
+
+.testimonial-text{
+   padding: 0 20px;
+   font-size: 1.25rem;
+   
+}
+
+
+
+.customer-photo img{
+   display: block;
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.customer-name{
+   font-size: 1.5rem;
+   color: rgba(0,0,0,0.8);
+   font-weight: 500;
+}
+
+.star-rating span{
+   font-size: 1.5rem;
+   color: orange;
+}
+
+
+
+
+/* ================================= */
+/* Section: Contact Us */
+/* ================================= */
+
+#contact{
+   padding: 40px 0;
+   background: #eee;
+   /* border: 2px solid red; */
+}
+
+.contact-container{
+   display: flex;
+   flex-wrap: wrap;
+   background: #fffa;
+}
+
+.contact-image img{
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.contact-image{
+   flex: 1 1 400px;
+}
+
+
+.form-container{
+   flex: 4 1 400px;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   padding: 10px 30px;
+   margin: auto;
+   gap: 1rem;
+}
+
+.form-container h2{
+   font-size: 2.5rem;
+   color: rgba(0,0,0,0.5);
+
+}
+
+.form-container a{
+   text-align: center;
+   margin: auto;
+   font-size: 1.5rem;
+}
+
+.form-container input, textarea{
+   padding: 10px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+   font-size: 1.5rem;
+   
+}
+
+
+
+
+/* ================================= */
+/* Section: Footer */
+/* ================================= */
+
+.footer{
+   background: rgba(0,0,0,0.6);
+   color: white;
+   font-size: 2rem;
+   text-align: center;
+   padding: 20px 0;
+}
+
+
+
+
+
+
+/* ================================= */
+/* Media Queries + Responsive NAVBAR */
+/* ================================= */
+
+@media (max-width: 768px){
+
+   .navbar{
+      opacity: 0.95;
+   }
+
+   .navbar-container{
+      flex-direction: row;
+      position: relative;
+   }
+
+   .navbar-container input[type="checkbox"]{
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 40px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+
+   }
+
+   .navbar-container .hamburger-lines{
+      display: inline-block;
+      /* border: 2px solid red; */
+      height: 40px;
+      width: 32px;
+      position: absoulute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+   }
+
+
+   .hamburger-lines .line{
+      display: inline-block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: black;
+   }
+
+   .line1{
+      transform-origin: top;
+      transition: transform 0.4s ease-in-out;
+   }
+
+   .line2{
+      transition: transform 0.4s ease-in-out;
+   }
+
+   .line3{
+      transform-origin: bottom;
+      transition: transform 0.4s ease-in-out;
+   }
+
+   .navbar-container input[type="checkbox"], 
+   .navbar-container .hamburger-lines{
+      display: block;
+   }
+
+   .navbar .menu-items{
+      display: none;
+   }
+   
+
+}
+
+
+
+
+
