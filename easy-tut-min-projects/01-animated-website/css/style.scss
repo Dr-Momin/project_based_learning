@@ -1,0 +1,159 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   text-decoration: none;
+}
+
+
+
+.hero{
+   background-image: url("../images/back-image.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+   width: 100%;
+   min-height: 100vh;
+   padding: 10px 10%;
+   overflow: hidden;
+
+   position: relative;
+}
+
+
+
+@mixin animate($translateX){
+   transform: translateX($translateX);
+   opacity: 0;
+   
+   animation: animate-content 1s linear forwards;
+}
+
+// =================================
+// Navbar 
+// =================================
+
+.navbar{
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 0.9rem;
+
+   padding: 20px 0;
+
+   .logo{
+      width: 100px;
+   }
+
+   ul{
+
+      display: flex;
+
+      li{
+         list-style-type: none;
+         padding: 0 1rem;
+         cursor: pointer;
+
+         a{
+            text-decoration: none;
+            color: black;
+         }
+      }
+   }
+
+
+   .nav-buttons{
+      
+      .login-btn{
+         color: black;
+      }
+
+   }
+}
+
+
+.btn{
+   background: linear-gradient(45deg, #df4881, #c430d7);
+   color: white;
+   padding: 10px 20px;
+   border-radius: 40px;
+   border-top-right-radius: 0;
+   font-size: 0.8rem;
+   margin-left: 0.5rem;
+   
+
+   transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+   border-top-right-radius: 40px;
+}
+
+
+
+
+// ==============================
+// Content
+// ==============================
+
+.content{
+   margin-top: 15%;
+   max-width: 600px;
+
+   h1{
+      font-size: 70px;
+      color: #222;
+      
+      @include animate(-250%);
+      
+   }
+
+
+   p{
+      margin: 20px 0 30px;
+
+      @include animate(-250%);
+      animation-delay: 0.6s;
+   }
+
+   .btn__join-now{
+      padding: 10px 40px;
+      display: inline-block;
+      
+      @include animate(-450%);
+      animation-delay: 0.9s;
+
+   }
+
+}
+
+
+
+@keyframes animate-content{
+   100%{
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
+
+
+.feature-image{
+   width: 400px;
+   position: absolute;
+   bottom: 0;
+   right: 10%;
+
+   @include animate(250%);
+   animation-delay: 0.5s;
+
+}
+
+@keyframes animate-img{
+   100%{
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
