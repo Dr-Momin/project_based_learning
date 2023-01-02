@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --primary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.small-bold-text {
+  font-size: rem;
+  font-weight: bold;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 15px;
+}
+
+.btn {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  outline: none;
+}
+
+.btn-blue {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.top-banner {
+  background: var(--accent-color);
+  background-image: url("../assets/asset 32.png");
+  background-size: 300px;
+}
+.top-banner .banner-text {
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.navbar .container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container .company-logo {
+  width: 200px;
+}
+.navbar .container .company-logo img {
+  width: 200px;
+}
+.navbar .container .nav-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.navbar .container .nav-list ul li {
+  padding-inline: 10px;
+}
+.navbar .container .nav-list ul li a {
+  color: black;
+  cursor: pointer;
+}
+.navbar .container .nav-list .btn-blue {
+  color: #fff;
+}
+
+.product {
+  padding: 40px 0;
+}
+.product .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product .container .left-content {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+.product .container .left-content h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.product .container .left-content p {
+  padding: 1rem 0;
+}
+.product .container .right-content {
+  flex: 1 1 400px;
+}
+.product .container .right-content img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
