@@ -87,7 +87,10 @@ a{
    width: 1200px;
    max-width: 100%;
    margin-inline: auto; 
-   padding: 2rem;;
+   padding: 1rem;;
+   overflow-x: hidden;
+   padding-inline: 2rem !important;
+   // border: 2px solid red;
 }
 
 .btn{
@@ -166,6 +169,10 @@ a{
          
       }
 
+      .nav-toggle{
+         display: none;
+      }
+
    }
 }
 
@@ -184,7 +191,7 @@ a{
       flex-wrap: wrap;
 
       .left-content{
-         flex: 1 1 300px;
+         flex: 1 1 400px;
          padding: 20px;
 
          h1{
@@ -194,12 +201,13 @@ a{
          }
 
          p{
-            padding: 1rem 0;
+            // padding: 1rem 0;
          }
       }
 
 
       .right-content{
+         // border: 2px solid red;
          flex: 1 1 400px;
          
          img{
@@ -351,6 +359,7 @@ a{
             // border: 2px solid red;
             flex: 1 1 200px;
             color: #fff;
+            min-height: 300px;
 
             background-size: cover;
             background-position: center;

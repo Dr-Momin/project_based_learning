@@ -67,7 +67,9 @@ a {
   width: 1200px;
   max-width: 100%;
   margin-inline: auto;
-  padding: 2rem;
+  padding: 1rem;
+  overflow-x: hidden;
+  padding-inline: 2rem !important;
 }
 
 .btn {
@@ -125,6 +127,9 @@ a {
 .navbar .container .nav-list .btn-blue {
   color: #fff;
 }
+.navbar .container .nav-toggle {
+  display: none;
+}
 
 .product {
   padding: 40px 0;
@@ -136,15 +141,12 @@ a {
   flex-wrap: wrap;
 }
 .product .container .left-content {
-  flex: 1 1 300px;
+  flex: 1 1 400px;
   padding: 20px;
 }
 .product .container .left-content h1 {
   font-weight: 500;
   font-size: 2.5rem;
-}
-.product .container .left-content p {
-  padding: 1rem 0;
 }
 .product .container .right-content {
   flex: 1 1 400px;
@@ -227,6 +229,7 @@ a {
 .examples .container .main-content .card {
   flex: 1 1 200px;
   color: #fff;
+  min-height: 300px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
