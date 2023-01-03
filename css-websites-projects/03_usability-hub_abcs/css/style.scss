@@ -14,27 +14,39 @@ html{
 }
 
 :root{
-   --primary-text-color: #183b56;
+   --primary-text-color-dark: #183b56;
    --primary-text-color: #577592;
    --accent-color: #2294ed;
    --accent-color-dark: #1d69a3;
+   --footer-background: #ebf2fa
+   --sub-footer-background: #b9cde4;
+   // --sub-footer-background: blue;
    --padding-inline-section: 20px;
+   
 }
 
 body{
    font-family: "Poppins", sans-serif;
-   color: var(--primary-text-color);
+   color: var(--primary-text-color-dark);
 }
 
 h1{
    font-size: 3rem;
+   font-weight: 500;
 }
 h2{
    font-size: 2rem;
+   font-weight: 600;
 }
 h3{
    font-size: 1.5rem;
+   font-weight: 600;
 }
+h4{
+   font-size: 1.15rem;
+   font-weight: 500;
+}
+
 p{
    font-family: "Roboto", sans-serif;
    font-size: 1.2rem;
@@ -42,6 +54,7 @@ p{
    line-height: 1.8rem;
 }
 a{
+   color: #000;
    display: inline-block;
    text-decoration: none;
 }
@@ -74,7 +87,7 @@ a{
    width: 1200px;
    max-width: 100%;
    margin-inline: auto; 
-   padding: 15px;
+   padding: 2rem;;
 }
 
 .btn{
@@ -90,6 +103,9 @@ a{
    color: #fff;
 }
 
+.row-reverse{
+   flex-direction: row-reverse;
+}
 
 // =======================================
 // Top Banner
@@ -104,11 +120,10 @@ a{
    .banner-text{
       text-align: center;
       color:#fff;
-      padding: 15px 0;
+      // padding: 15px 0;
    }
 
 }
-
 
 
 
@@ -195,6 +210,302 @@ a{
    }
 
 }
+
+
+// ========================================
+// Companies Section
+// ========================================
+.companies{
+
+   .container{
+
+      text-align: center;
+      padding: 2rem 0;
+
+      .company-logos{
+
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         // height: 46px;
+
+         .company-logo{
+            flex-basis: 20px;
+            height: 46px;
+            margin-block: 1rem;
+         }
+
+      }
+   }
+}
+
+
+// ========================================
+// Features Section
+// ========================================
+.features{
+
+   background-image: url("../assets/asset\ 34.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   // background-size: cover;
+
+   .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .heading-content{
+         text-align: center;
+      }
+
+      .main-content{
+         display: flex;
+         flex-wrap: wrap;
+         padding: 2rem 0px;
+
+         .card{
+            flex: 1 1 300px;
+            padding: 1.5rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+
+         }
+
+      }
+   }
+
+}
+
+
+// ========================================
+// Big Features Section
+// ========================================
+
+.big-features-section{
+
+
+   .container{
+
+      .feature{
+
+         display: flex;
+         gap: 2rem;
+         flex-wrap: wrap;
+
+         .left-content{
+            flex: 1 1 350px;
+   
+            img{
+               width: 100%;
+            }
+         }
+   
+   
+         .right-content{
+            flex: 1 1 400px;
+   
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+         }
+
+      }
+
+   
+   }
+
+
+}
+
+
+
+// ========================================
+// Examples Section
+// ========================================
+
+.examples{
+
+   .container{
+      
+
+      .heading-content{
+         text-align: center;
+         margin-block: 2rem;
+      }
+
+
+      .main-content{
+
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1.2rem;
+         min-height: 300px;
+         
+
+         .card{
+            // border: 2px solid red;
+            flex: 1 1 200px;
+            color: #fff;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            position: relative;
+            p{
+               position: absolute;
+               bottom: 20px;
+               left: 20px;
+            }
+
+         }
+
+         .img-1{
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../assets/asset\ 36.jpeg");
+         }
+
+         .img-2{
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../assets/asset\ 37.jpeg");
+         }
+
+         .img-3{
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../assets/asset\ 38.jpeg");
+         }
+
+         .img-4{
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("../assets/asset\ 39.jpeg");
+         }
+      }
+
+   }
+
+}
+
+
+
+// ========================================
+// CTA Section
+// ========================================
+.cta{
+   background: var(--primary-text-color-dark);
+   color: #fff;
+
+   .container{
+
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .left-content{
+         // border: 2px solid red;
+         flex: 1 1 300px;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 1.2rem;
+
+         .feature-list{
+            display: flex;
+            // flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+
+            ul{
+               // flex: 1 1 150px;
+               // border: 2px solid red;
+               padding-inline-start: 1rem;
+            }
+         }
+
+      }
+
+
+      .right-content{
+         flex: 1 1 400px;
+
+         img{
+            width: 100%;
+         }
+      }
+
+   }
+
+}
+
+
+
+// ========================================
+// Footer
+// ========================================
+
+.main-footer{
+
+   background-color: #ebf2fa;
+
+   .container{
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      padding-block: 4rem;
+
+      .list{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         line-height: 2rem;
+
+         h4{
+            margin-bottom: 1rem;
+            font-weight: 600;
+         }
+
+      }
+
+   }
+}
+
+
+
+// ========================================
+// Sub Footer
+// ========================================
+.sub-footer{
+
+   background-color: #b9cde4;
+   
+   .container{
+      display: flex;
+      justify-content: space-between;
+   
+      ul{
+         display: flex;
+         list-style-type: none;
+         gap: 1rem;
+         align-items: center;
+      }
+
+      
+   
+      .list-icons{
+         
+         li{
+            width: 25px;
+            img{
+               width: 100%;
+            }
+         }
+   
+      }
+   }
+
+   
+}
+
 
 
 
