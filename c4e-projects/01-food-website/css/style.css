@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #A82C48;
+  --secondry-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: "Roboto", sans-serif;
+  --secondry-font: "Quicksand", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: var(--secondry-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  color: var(--secondry-color);
+  line-height: 3rem;
+}
+
+h4 {
+  color: var(--secondry-color);
+  font-family: var(--secondry-font);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=style.css.map */
