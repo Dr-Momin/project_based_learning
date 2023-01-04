@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
 
 *,
 *::before,
@@ -22,7 +24,7 @@ a:hover{
 }
 
 a:hover{
-   color:var(--primary-color);
+   color:var(--primary-color) !important;
 }
 
 ul,
@@ -53,7 +55,7 @@ body{
    font-family: var(--primary-font);
    // font-size: 100%;
    font-weight: 400;
-   // background: #333;
+   overflow-x: hidden;
 }
 
 
@@ -122,19 +124,174 @@ h1 {
  }
 
 
+//  ============================
+// Mixins
+// =============================
+@mixin basic-btn-styling{
+   display: inline-block;
+   padding: 0.75rem 1.85rem;
+   line-height: 1.5rem;
+   border: 0;
+   font-size: 1rem;
+   font-weight: 600;
+   text-transform: capitalize;
+   box-shadow: 0 0 3px rgba(0,0,0,0.4);
+   
+   transition: all 0.4s ease-out 0s;
+}
+
+
+// =============================
+// Utility Classes
+// ==============================
+
+.main-btn{
+   @include basic-btn-styling();
+
+   background-color: var(--primary-color);
+   color: var(--white-color);
+   
+}
+
+.white-btn{
+   @include basic-btn-styling();
+
+   background-color: var(--white-color);
+   color: var(--text-color);
+}
+
+.main-btn:hover{
+   background-color: transparent;
+   color: var(--primary-color);
+   border: 2px solid var(--primary-color);
+}
+
+.wrapper{
+   padding-block: 8.25rem;
+}
+
+.text-content{
+   width: 70%;
+   margin: auto;
+}
+
+// .counter-section h2,
+// .testimonial-section h2,
+// .book-food-text h2{
+//    color: var(--white-color);
+// }
+
+
+
+
+
 
 
 // ===========================
-// Custom CSS Code
+// Header Design || Navigation Bar
 // ===========================
 
 
 
+nav.navigation-wrap{
+
+   position: fixed;
+   width: 100%;
+   left: 0;
+   z-index: 1000;
+   transition: all 0.3s ease-out;
+
+}
+// Change navbar styling on scroll
+nav.navigation-wrap.scroll-on{
+
+   background-color: var(--white-color);
+   box-shadow: 0 1rem 1.5rem 0 rgba(0,0,0,0.5); 
+   transition: all 0.15s ease-in-out 0s;
+}
+
+.navbar{
+
+
+   li.nav-item{
+      padding: 0.625rem;
+      transition: all 200ms linear;
+
+      .nav-link{
+         color: var(--primary-color);
+         transition: 0.3s ease;
+         font-weight: 500;
+      }
+      .nav-link:hover{
+         color: var(--secondry-color) !important;
+      }
+
+
+   }
+
+   .main-btn{
+      box-shadow: none;
+   }
+
+   button.navbar-toggler{
+      outline: unset;
+      border: unset;
+      box-shadow: none;
+   }
+
+
+
+}
 
 
 
 
 
+// ===========================
+// Hero Section 
+// ===========================
+
+.home{
+
+   // height: 100vh;
+   .top-banner{
+      height: 100vh;
+      // display: flex;
+      // align-items: center;
+
+      padding: 16rem 0 9rem;
+
+      background-image: url("../images/bg/bg-1.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+
+
+
+}
+
+
+
+// ===========================
+// Counter Section 
+// ===========================
+.counter-section{
+
+   background-color: var(--primary-color);
+   text-transform: uppercase;
+
+   h2, span, p{
+      color: #fff;
+   }
+
+}
+
+
+
+// ===========================
+// About Section 
+// ===========================
 
 
 

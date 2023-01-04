@@ -1,1 +1,19 @@
-/*# sourceMappingURL=media-queries.css.map */
+@media (max-width: 992px) {
+  .text-content {
+    width: 100%;
+  }
+  .navigation-wrap {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .top-banner {
+    padding: 10rem 0 9rem;
+  }
+}/*# sourceMappingURL=media-queries.css.map */
