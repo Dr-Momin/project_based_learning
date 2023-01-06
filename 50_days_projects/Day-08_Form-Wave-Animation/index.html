@@ -7,38 +7,32 @@
     <title>My Project</title>
   </head>
   <body>
-    
+
 
     <div class="container">
+      <h1>Login Here</h1>
 
-      <h1>Please Login</h1>
-
-      <form action="#">
+      <div class="form-control">
+        <input type="text" name="email" id="email">
+        <label for="email">Email</label>
         
-        <!-- For Email -->
-        <div class="form-control">
-          <input type="text" name="email" id="email" required>
-          <label for="email">Email</label>
-        </div>
+      </div>
 
-        <!-- For Password -->
-        <div class="form-control">
-          <input type="password" required>
-          <label for="password">Password</label>
-        </div>
 
-        <button class="btn">Login</button>
+      <div class="form-control">
+        <input type="password" name="password" id="password">
+        <label for="password">Password</label>
+      </div>
 
-        <p class="text">Don't have an account? <a href="#">Register</a></p>
+      <button class="btn" type="submit">Submit</button>
 
-      </form>
+      <p class="text">Don't have an account? <a href="#">Register</a> </p>
+
 
 
     </div>
-
-
-
-
+    
+    
     <script src="script.js"></script>
   </body>
 </html>

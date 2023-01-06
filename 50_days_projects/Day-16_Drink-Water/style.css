@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+}
+
+* {
+  box-sizing: border-box;
+  magin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3494e4;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* ====================================== */
+/* ====================================== */
+/* Your Code Starts Here */
+
+.cup{
+  border: 4px solid var(--border-color);
+  background: #fff;
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+
+  height: 300px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+
+.cup.cup-small{
+  height: 100px;
+  width: 50px;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 0 0 15px 15px;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.cup.cup-small.full{
+  background: var(--fill-color);
+  color: #fff;
+}
+
+
+.cups{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+
+}
+
+
+.remained{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+
+}
+
+
+.remained span{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small{
+  font-size: 12px;
+}
+
+.percentage{
+  background: var(--fill-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+
+
+}

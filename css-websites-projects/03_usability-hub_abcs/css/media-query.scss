@@ -1,0 +1,148 @@
+
+
+// All Media Queries will be applied here
+
+// ======================================
+// Screen Sizes - Break Points
+// 
+//    992px --->  Large Device
+//    768px --->  Mediumn Device
+//    480px --->  Small Device
+// ======================================
+
+
+
+
+
+
+// ======================================
+// Large Screen 
+// ====================================== 
+@media (max-width: 992px){
+
+   .navbar{
+
+      .container{
+         .nav-list{
+            display: none;
+         }
+   
+         .nav-toggle{
+            display: block;
+         }
+
+      }
+      
+      
+   }
+
+   .product{
+
+      .container{
+
+         flex-direction: column-reverse;
+         
+         
+         .left-content{
+            flex: 1 1 200px;
+         }
+
+         .right-content{
+            flex: 1 3 100px;
+            // height: 200px;
+            display: flex;
+            justify-content: center;
+            img{
+               // height: 300px;
+               width: 60%;
+               // border: 2px solid red;
+               // margin-inline: auto;
+            }
+         }
+
+      }
+   }
+
+   .examples{
+
+      .container{
+
+         .main-content{
+            
+            .card{
+               // width: 50%;
+               flex: 1 1 300px;
+            }
+         }
+
+      }
+   }
+
+}
+
+
+// =======================================
+// Medium Screen 
+// =======================================
+@media (max-width: 768px){
+
+   .btn-blue{
+      width: 100%;
+      text-align: center;
+      margin-block: 1rem;
+   }
+
+   .product{
+
+      .container{
+
+         flex-direction: column-reverse;
+         
+         .left-content{
+            flex: 1 1 300px;
+         }
+
+         .right-content{
+            flex: 1 5 100px;
+         }
+
+      }
+   }
+
+
+   .examples{
+
+      .container{
+
+         .main-content{
+            
+            .card{
+               // width: 50%;
+               flex: 1 1 250px;
+            }
+         }
+
+      }
+   }
+
+}
+
+
+
+// =======================================
+// Small Screen 
+// =======================================
+@media (max-width: 480px){
+
+   
+
+}
+
+
+
+
+
+
+
+
+
