@@ -276,6 +276,15 @@ Navbar
     .aimg2{
         margin-left: 5rem;
     }
+
+    .card:hover{
+        transform: translatey(-0.6rem);
+        cursor: pointer;
+    }
+    .icon-box{
+        text-align: center;
+        margin: 0 auto 2.5rem;
+    }
 }
 
 
